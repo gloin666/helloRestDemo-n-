@@ -12,6 +12,9 @@
 		4106C2C922004A7A00D66773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4106C2C722004A7A00D66773 /* Main.storyboard */; };
 		4106C2CB22004A8800D66773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4106C2CA22004A8800D66773 /* Assets.xcassets */; };
 		4106C2CE22004A8800D66773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4106C2CC22004A8800D66773 /* LaunchScreen.storyboard */; };
+		4106C2D822004DB600D66773 /* userPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106C2D722004DB600D66773 /* userPosts.swift */; };
+		4106C2DA22004EFE00D66773 /* PostParcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106C2D922004EFE00D66773 /* PostParcer.swift */; };
+		4106C2DC22005AD300D66773 /* memejson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4106C2DB22005AD300D66773 /* memejson.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4106C2CA22004A8800D66773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4106C2CD22004A8800D66773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4106C2CF22004A8800D66773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4106C2D722004DB600D66773 /* userPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPosts.swift; sourceTree = "<group>"; };
+		4106C2D922004EFE00D66773 /* PostParcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParcer.swift; sourceTree = "<group>"; };
+		4106C2DB22005AD300D66773 /* memejson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = memejson.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		4106C2C222004A7A00D66773 /* helloRestDemo(n) */ = {
 			isa = PBXGroup;
 			children = (
+				4106C2D622004D8500D66773 /* mediafiles */,
+				4106C2D522004D7600D66773 /* model */,
 				4106C2C322004A7A00D66773 /* AppDelegate.swift */,
 				4106C2C522004A7A00D66773 /* ViewController.swift */,
 				4106C2C722004A7A00D66773 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				4106C2CF22004A8800D66773 /* Info.plist */,
 			);
 			path = "helloRestDemo(n)";
+			sourceTree = "<group>";
+		};
+		4106C2D522004D7600D66773 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4106C2D722004DB600D66773 /* userPosts.swift */,
+				4106C2D922004EFE00D66773 /* PostParcer.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4106C2D622004D8500D66773 /* mediafiles */ = {
+			isa = PBXGroup;
+			children = (
+				4106C2DB22005AD300D66773 /* memejson.jpg */,
+			);
+			path = mediafiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4106C2CE22004A8800D66773 /* LaunchScreen.storyboard in Resources */,
+				4106C2DC22005AD300D66773 /* memejson.jpg in Resources */,
 				4106C2CB22004A8800D66773 /* Assets.xcassets in Resources */,
 				4106C2C922004A7A00D66773 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4106C2C622004A7A00D66773 /* ViewController.swift in Sources */,
+				4106C2D822004DB600D66773 /* userPosts.swift in Sources */,
+				4106C2DA22004EFE00D66773 /* PostParcer.swift in Sources */,
 				4106C2C422004A7A00D66773 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ehb.helloRestDemo-n-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ehb.helloRestDemo-n-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
