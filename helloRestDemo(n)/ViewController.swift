@@ -9,13 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var items = [UserPosts]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    print(PostParcer.getAllPosts())
+   items = PostParcer.getAllPosts()
     
     }
 
 
+}
+extension ViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        
+        let postForCell = items[indexPath.row]
+        cell.textLabel!.text = postForCell.title
+        return cell
+    }
+    
+    
+    
+    
 }
 

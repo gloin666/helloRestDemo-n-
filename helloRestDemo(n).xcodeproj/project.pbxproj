@@ -15,6 +15,7 @@
 		4106C2D822004DB600D66773 /* userPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106C2D722004DB600D66773 /* userPosts.swift */; };
 		4106C2DA22004EFE00D66773 /* PostParcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106C2D922004EFE00D66773 /* PostParcer.swift */; };
 		4106C2DC22005AD300D66773 /* memejson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4106C2DB22005AD300D66773 /* memejson.jpg */; };
+		4106C2DE2200614F00D66773 /* jason_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4106C2DD2200614F00D66773 /* jason_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4106C2D722004DB600D66773 /* userPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPosts.swift; sourceTree = "<group>"; };
 		4106C2D922004EFE00D66773 /* PostParcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParcer.swift; sourceTree = "<group>"; };
 		4106C2DB22005AD300D66773 /* memejson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = memejson.jpg; sourceTree = "<group>"; };
+		4106C2DD2200614F00D66773 /* jason_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jason_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		4106C2D622004D8500D66773 /* mediafiles */ = {
 			isa = PBXGroup;
 			children = (
+				4106C2DD2200614F00D66773 /* jason_icon.png */,
 				4106C2DB22005AD300D66773 /* memejson.jpg */,
 			);
 			path = mediafiles;
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4106C2DE2200614F00D66773 /* jason_icon.png in Resources */,
 				4106C2CE22004A8800D66773 /* LaunchScreen.storyboard in Resources */,
 				4106C2DC22005AD300D66773 /* memejson.jpg in Resources */,
 				4106C2CB22004A8800D66773 /* Assets.xcassets in Resources */,
